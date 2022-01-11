@@ -9,10 +9,10 @@ headers = {
                   'Chrome/80.0.3987.116 Safari/537.36'
 }
 url = 'http://xk.ynu.edu.cn/xsxkapp/sys/xsxkapp/*default/index.do'
-stdCode = '20191060119'  # 在''中填入你的学号
-pswd = 'xjh2001116.'  # 填你的密码,如果你有安全上的考虑也可以等浏览器打开了再填
-key = 'SCU144793Tf05e8a4ca147bf8b74ad258c3ba3b6285ff2c838be09a'  # 填你在server酱上获取到的key
-path = 'D:\chromedriver.exe'  # 填写你的chromedriver路径，如 'D:/webdriver/chromedriver.exe'
+stdCode = ''  # 在''中填入你的学号
+pswd = ''  # 填你的密码,如果你有安全上的考虑也可以等浏览器打开了再填
+key = ''  # 填你在server酱上获取到的key
+path = ''  # 填写你的chromedriver路径，如 'D:/webdriver/chromedriver.exe'
 
 # 下面这个列表填你想查询的 素选课 ，以 ['课程名称', '授课老师'], 的格式填，注意最后有一个 英文 逗号
 
@@ -22,7 +22,7 @@ publicCourses = [
     ['课程名', '老师','课程号']
     # 这是个测试用例，可以先不修改直接运行看看是否成功，如果不小心抢到了自己手动退掉就好
 ]
-
+#目前课程号的获得很麻烦，不是直接在选课页面就能获取的，需要在GetCourse中找到对应的course["teachingClassID"]
 # 下面这个列表填你想查询的 主修课，包括必修和选修，格式填写同上
 programCourse = [
     ['米国政治', 'biden']
